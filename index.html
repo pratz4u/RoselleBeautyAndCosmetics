@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salon Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <style>
+    body {
+      background-color: #fffafc;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+    figure img {
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+    }
+    section {
+      margin-top: 2rem;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Salon Name</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" role="button">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Welcome to Our Salon</h1>
+    <p>Where beauty and relaxation meet.</p>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80" alt="Salon Interior" />
+      <figcaption>Beautiful salon interior</figcaption>
+    </figure>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>Our Services</h2>
+          <h3>Explore what we offer</h3>
+        </hgroup>
+        <p>We provide a wide range of services to help you look and feel your best.</p>
+        
+        <h3>[Service Name 1]</h3>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=800&q=80" alt="Service 1" />
+          <figcaption>[Service 1 Image]</figcaption>
+        </figure>
+        <p>Brief description of this service.</p>
+
+        <h3>[Service Name 2]</h3>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1621605815977-243a1d68bc25?auto=format&fit=crop&w=800&q=80" alt="Service 2" />
+          <figcaption>[Service 2 Image]</figcaption>
+        </figure>
+        <p>Brief description of this service.</p>
+
+        <h3>[Service Name 3]</h3>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1600336755444-d9cf975f2c3a?auto=format&fit=crop&w=800&q=80" alt="Service 3" />
+          <figcaption>[Service 3 Image]</figcaption>
+        </figure>
+        <p>Brief description of this service.</p>
+
+        <h3>[Service Name 4]</h3>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=80" alt="Service 4" />
+          <figcaption>[Service 4 Image]</figcaption>
+        </figure>
+        <p>Brief description of this service.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Subscribe Section -->
+  <section aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Stay Updated</h2>
+          <h3>Subscribe to our newsletter</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="First name" aria-label="First name" required />
+          <input type="email" id="email" name="email" placeholder="Email address" aria-label="Email address" required />
+          <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>
+      <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+    </small>
+  </footer>
+</body>
+</html>
